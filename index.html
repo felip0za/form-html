@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" type="text/css" href="Styles.css" media="screen" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
 </head>
-<body>
-    <h1>Formulario de cadastro</h1>
-    <form>
-        <input type="date" id="date"><br>
-        <label>Email:</label>
-        <input type="email" name="email" id="email" ><br>
-        <label>Senha:</label>
-        <input type="password" name="senha" id="senha"><br>
-        <label>Comentarios</label>
-        <textarea name="comentarios" id="" cols="30" rows="1"></textarea><br>
 
-        <h2>Camisa</h2>
-        <label>Selecione a cor:</label>
-        <input type="color" name="corCamisa" id="corCamisa"><br>
-        
-        
+<body>
+    <form>
+        <h1>Formulario de cadastro</h1>
+        <div class="grid">
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label>Senha:</label>
+                <input type="password" name="senha" id="senha">
+            </div>
+        </div>
+        <input type="date" id="date">
+
         <h2>Endereço</h2>
-        <hr>
-        <label>Estado</label>
-        <select name="estado" id="estado"></select><br>
-        <label>Cidade</label>
-        <select name="cidade" id="cidade"></select><br>
+        <div class="grid">
+            <div>
+                <label>Estado</label>
+                <select name="estado" id="estado">
+                    <option value="CE">Ceara</option>
+                    <option value="BH">Belo Horizonte</option>
+                    <option value="SP">Sao Paulo</option>
+                </select>
+            </div>
+            <div>
+                <label>Cidade</label>
+                <select name="cidade" id="cidade">
+                    <option value="fortaleza">Fortaleza</option>
+                    <option value="recife">Recife</option>
+                    <option value="bangu">Bangu</option>
+                </select><br>
+            </div>
+        </div>
         <button>Submit</button>
     </form>
 </body>
+
 </html>
